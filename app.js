@@ -39,3 +39,37 @@ console.log(favouriteColors);
 //create a new array based on numbers
 const favouriteNumbers = [1, 2, 3];
 console.log(favouriteNumbers);
+
+//create a new array of months
+const months = ["Jan", "Feb", "April"];
+console.log(months);
+
+//add a month to the beginning of the array
+months.unshift("Dec");
+console.log(months);
+
+//at index point 3 add a month aand do not overwrite. we use index point 3, as Dec = 0, Jan = 1, Feb = 2 therefore March needs to be 3
+months.splice(3, 0, "March");
+console.log(months);
+
+//add a month at the end of the array
+months.push("May");
+console.log(months);
+
+//how many items are in my array?
+console.log(months.length); //6
+
+//get the last element of the array
+months[months - 1];
+
+//remove an element from the beginning of the array
+months.shift();
+console.log(months); // removes Dec
+
+// change an item e.g. change May to  June. we use index point 4 as that is the index value of May
+months[4] = "June";
+console.log(months);
+
+//remove the last item in the array
+months.pop();
+console.log(months);
