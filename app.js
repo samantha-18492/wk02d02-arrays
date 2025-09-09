@@ -48,7 +48,7 @@ console.log(months);
 months.unshift("Dec");
 console.log(months);
 
-//at index point 3 add a month aand do not overwrite. we use index point 3, as Dec = 0, Jan = 1, Feb = 2 therefore March needs to be 3
+//at index point 3 add a month and do not overwrite. we use index point 3, as Dec = 0, Jan = 1, Feb = 2 therefore March needs to be 3
 months.splice(3, 0, "March");
 console.log(months);
 
@@ -73,3 +73,11 @@ console.log(months);
 //remove the last item in the array
 months.pop();
 console.log(months);
+
+//to access the first element
+console.log(months[0]); // Jan
+
+//arrays can be made up of different data types and can sit within other arrays e.g.
+const films = ["Pulp Fiction", "2006", ["Action", "Drama"]];
+// to access the Drama element we use 2 to choose the [Genre] field (as Pulp Fiction = 0, 2006 = 1, [Genre] = 2), and then 1 to choose Drama (as Action = 0, Drama = 1)
+console.log(films[2][1]); // Drama
